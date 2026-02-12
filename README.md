@@ -1,5 +1,4 @@
 # VEX robot tasks
-VEX robot tasks project overview
 
 ## 📌 Overview
 Brief 2–3 sentence explanation of what the project is and what it aimed to achieve.
