@@ -26,7 +26,7 @@ The line following function was mainly written by my lab partner, but after mult
 In the end, all of the fuctions we wrote worked. The arm and SONAR both worked quite well, although they were the simpler ones to code and tweak. The line following was particulary tricky with the amount of tweaks and adjustments we had to make. In the end, the function worked, but it was not a solid function which could work all the time. 
 
 ## 📸 Project Images
-The images taken from this proejct were from my personal notebook where I planned, wrote pseudocode and made the flowcharts. There were no
+The images taken from this project were from my personal notebook where I planned, wrote pseudocode and made the flowcharts. There were no
 
 #### Arm planning
 ![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/arm%20notebook%20ss.png)
