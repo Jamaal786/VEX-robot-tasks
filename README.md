@@ -33,9 +33,12 @@ Most of the images taken from this proejct were from my personal notebook where 
 
 #### SONAR planning
 ![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/sonar%20notebook%20ss.png)
+
 #### Brown line following planning
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/brown%20line%20following%20notebook%20ss.png)
 
 #### Flowcharts
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/brown%20line%20folowing%20flowchart.png)
 
 ## 📚 What I Learned
 
