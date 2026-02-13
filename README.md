@@ -46,7 +46,7 @@ The images taken from this project were from my personal notebook where I planne
 ## 📚 What I Learned
 
 - Starting to plan on how to tackle the problem ahead is very important.
-- Keeping a diary of work done is a great practice for showing work and writing down immediate ideas.
+- Keeping a notebook of work done is a great practice for showing work and writing down immediate ideas.
 - Being able to see the effects of P and PI control in real time definitely helped with understanding it. Conceptually a difficult topic to grasp only through lectures.
 - Managed to practice my ability to think in "code" and how to implement pseudocode into real code.
 - I could improve by understanding how certain components in a system works ahead of class, or researching them before we begin our coding. Maybe ask more questions and definitly brush up on my coding knowledge.
