@@ -30,8 +30,9 @@ Most of the images taken from this proejct were from my personal notebook where 
 
 #### Arm planning
 ![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/arm%20notebook%20ss.png)
-#### SONAR planning
 
+#### SONAR planning
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/sonar%20notebook%20ss.png)
 #### Brown line following planning
 
 #### Flowcharts
