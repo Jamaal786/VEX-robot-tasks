@@ -20,13 +20,21 @@ For the arm function, I used the encoder from the arm and converted the encoder 
 The SONAR function was ultised from the SONAR sensor built in the VEX robot. The distance of the blockade detected from SONAR would be relayed back. Using this value and some trial and error, I managed to get a proper distance that the VEX robot should stop away from the blockade by calling another function we wrote to ensure effecient pickup of the payload. 
 
 #### Line Following
-The line following function was initially written by my lab partner, but after multiple failed attempts, I decided to have a look to try and adjust some of the code. In order to do that, I had to understand the whole task and plan it out on my own. In the end, I found out that the code is correct and the values we have put in for the IR sensor may need some tweaking. This particlar function was very tricky for us both, and we just trial and error'ed the whole process, which ultimately ended up working in the end. However, we both knew that the function could improve and be more stable.
+The line following function was mainly written by my lab partner, but after multiple failed attempts, I decided to have a look to try and adjust some of the code. In order to do that, I had to understand the whole task and plan it out on my own. In the end, I found out that the code was correct and the values we had put in for the IR sensor needed some tweaking. This particlar function was very tricky for us both as we were not strong in coding and never tackled a problem like this before. We just trial and error'ed the whole process, which ultimately ended up working in the end. However, we both knew that the function could improve and be more stable.
 
 ## 📊 Results
 In the end, all of the fuctions we wrote worked. The arm and SONAR both worked quite well, although they were the simpler ones to code and tweak. The line following was particulary tricky with the amount of tweaks and adjustments we had to make. In the end, the function worked, but it was not a solid function which could work all the time. 
 
 ## 📸 Project Images
-(Add screenshots here)
+Most of the images taken from this proejct were from my personal notebook where I planned and wrote pseudocode.
+
+#### Arm planning
+![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/arm%20notebook%20ss.png)
+#### SONAR planning
+
+#### Brown line following planning
+
+#### Flowcharts
 
 ## 📚 What I Learned
 
