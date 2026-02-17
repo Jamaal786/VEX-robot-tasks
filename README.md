@@ -29,19 +29,19 @@ In the end, all of the fuctions we wrote worked. The arm and SONAR both worked q
 The images taken from this project were from my personal notebook where I planned, wrote pseudocode and made the flowcharts. There were no
 
 #### Arm planning
-![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/arm%20notebook%20ss.png)
+![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/arm%20notebook%20ss.png)
 
 #### SONAR planning
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/sonar%20notebook%20ss.png)
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/sonar%20notebook%20ss.png)
 
 #### Brown line following planning
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/brown%20line%20following%20notebook%20ss.png)
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/brown%20line%20following%20notebook%20ss.png)
 
 #### Flowcharts
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/brown%20line%20folowing%20flowchart.png)
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/brown%20line%20folowing%20flowchart.png)
 
 #### Robot in action
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/Vex%20robot.PNG)
+![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/Vex%20robot.PNG)
 
 ## 📚 What I Learned
 
