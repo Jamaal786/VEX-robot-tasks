@@ -1,7 +1,7 @@
 # VEX robot tasks
 
 ## 📌 Overview
-This project involved writing code for the robot to complete tasks to complete a main mission. The robot had to comply certain rules and achieve objectives at the same time to get a good overal score. My role in this project was to write code for the robot to raise and lower its arm, usage of sonar for the robot to stop a certain amount of distance away from a blockage, and aided in code tweaking of the robot following a line. I also drew up flowcharts of the necessary functions, and the main body of the code. 
+This project involved developing the control software for a VEX robot to complete a seiries of tasks as part of a main mission. The robot was required to comply with competition rules while achieving objectives to maximise its overall score. My primary role was to develop code for controlling the robot's arm, enabling it to raise and lower as required. I also implmented the use of SONAR sensing to detect objects and stop a pre defined distance. I aided in refining the line following alogorithm to improve navigation reliability. I also drew up flowcharts of the main program and functions which helped with planning, debugging, and overall system organisation. 
 
 ## 🎯 Objectives
 - Arm raised and lowered accuratey via P controller
@@ -11,42 +11,93 @@ This project involved writing code for the robot to complete tasks to complete a
 ## 🛠 Tools & Concepts Used
 - C programming
 - Concept of a PI controller
+- SONAR Sensor Integration
+- IR Sensor Line Following
+- Encoder Feedback Control 
 
 ## 🔍 Methodology
 #### Arm Function
-For the arm function, I used the encoder from the arm and converted the encoder counts into angular degrees. This allowed an easier way to adjust the height of the arm we needed it to reach to pick up and drop off the payload. I used a P controller instead of PI as we did not need the arm to be extremely accurate and it had large operating range to carry out its job with small deviations.
+The arm position was controlled using encoder feedback from the arm motor. Encoder counts were converted into angular position (degrees), which provided a more intuitive and precise way to define the required arm positions for payload pickup and drop-off. 
+<br>
+
+A proportional (P) controller was implemented to regulate the arm position. A proportional integral (PI) controller was not necessary, as the system did not need high positional precision and the arm operated within a relatively large acceptable range. The P controller provided sufficient responsiveness and stability while keeping the control implementation simple.
 
 #### SONAR
-The SONAR function was ultised from the SONAR sensor built in the VEX robot. The distance of the blockade detected from SONAR would be relayed back. Using this value and some trial and error, I managed to get a proper distance that the VEX robot should stop away from the blockade by calling another function we wrote to ensure effecient pickup of the payload. 
+
+The SONAR functionality utilised the built-in SONAR sensor on the VEX robotic to detect the distance between the robot and obstacles ahead. The measured distance was continuously monitored and used to determine when the robot should stop before reaching the blockade.
+<br>
+
+Through testing and adjustments, an appropriate stopping distance was determined to ensure reliable payload pickup. Once this distance was reached, a separate function was called to initiate the payload pick up sequence.
 
 #### Line Following
-The line following function was mainly written by my lab partner, but after multiple failed attempts, I decided to have a look to try and adjust some of the code. In order to do that, I had to understand the whole task and plan it out on my own. In the end, I found out that the code was correct and the values we had put in for the IR sensor needed some tweaking. This particlar function was very tricky for us both as we were not strong in coding and never tackled a problem like this before. We just trial and error'ed the whole process, which ultimately ended up working in the end. However, we both knew that the function could improve and be more stable.
+
+The line-following function was initially developed by my lab partner. To assist with debugging and improvement, I reviewed the implementation and analysed the control logic independently to fully understand the system.<br>
+
+After investigation, I determined that the core algorithm was functioning correctly. However, the infrared (IR) sensor threshold values required calibration. These values were refined through iterative testing to improve the robot’s ability to detect and follow the line.<br>
+
+Although the final implementation achieved a working line following function, the system’s reliability was sensitive to the IR sensor calibration and environmental conditions. This highlighted the importance of proper sensor tuning and robustness in autonomous navigation systems. 
 
 ## 📊 Results
-In the end, all of the fuctions we wrote worked. The arm and SONAR both worked quite well, although they were the simpler ones to code and tweak. The line following was particulary tricky with the amount of tweaks and adjustments we had to make. In the end, the function worked, but it was not a solid function which could work all the time. 
+- All core functions were successfully implemented and integrated into the robot.
+- The arm control and SONAR functions performed reliably and met the functional requirements for payload handling and obstacle detection.
+- The line-following function was ultimately successful in enabling autonomous navigation. However, it required extensive calibration and remained less robust than the other subsystems. 
 
 ## 📸 Project Images
-The images taken from this project were from my personal notebook where I planned, wrote pseudocode and made the flowcharts. There were no
+The images taken from this project were from my personal notebook where I planned, wrote pseudocode and made the flowcharts.
 
 #### Arm planning
-![arm planning](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/arm%20notebook%20ss.png)
+
+<p align="center">
+  <img src="images/arm notebook ss.png" width="800">
+</p>
+
+<p align="center">
+  <i>Figure 1: Arm planning notes from notebook</i>
+</p>
 
 #### SONAR planning
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/sonar%20notebook%20ss.png)
+
+<p align="center">
+  <img src="images/sonar notebook ss.png" width="800">
+</p>
+
+<p align="center">
+  <i>Figure 2: SONAR planning notes from notebook</i>
+</p>
 
 #### Brown line following planning
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/brown%20line%20following%20notebook%20ss.png)
+
+<p align="center">
+  <img src="images/brown line following notebook ss.png" width="800">
+</p>
+
+<p align="center">
+  <i>Figure 3: Analysis of line following function</i>
+</p>
+
 
 #### Flowcharts
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/brown%20line%20folowing%20flowchart.png)
+<p align="center">
+  <img src="images/brown line folowing flowchart.png" width="800">
+</p>
+
+<p align="center">
+  <i>Figure 4: The completed flowchart for brown line following function</i>
+</p>
 
 #### Robot in action
-![](https://github.com/Jamaal786/VEX-robot-tasks/blob/main/images/Vex%20robot.PNG)
+
+<p align="center">
+  <img src="images/Vex robot.PNG" width="500">
+</p>
+
+<p align="center">
+  <i>Figure 5: VEX robot about to pick up payload </i>
+</p>
 
 ## 📚 What I Learned
-
-- Starting to plan on how to tackle the problem ahead is very important.
-- Keeping a notebook of work done is a great practice for showing work and writing down immediate ideas.
-- Being able to see the effects of P and PI control in real time definitely helped with understanding it. Conceptually a difficult topic to grasp only through lectures.
-- Managed to practice my ability to think in "code" and how to implement pseudocode into real code.
-- I could improve by understanding how certain components in a system works ahead of class, or researching them before we begin our coding. Maybe ask more questions and definitly brush up on my coding knowledge.
+- The importance of planning ahead for potential issues
+- Maintaining a detailed engineering notebook of work is great practice for documenting work, ideas and troubleshooting steps
+- Developing a practical understanding of proportional (P) and proportional–integral (PI) control and observing their effects on system behaviour in real time
+- Translating pseudocode and flowcharts into functional, structured program code
+- The use of sensor integration and the challenges of achieving reliable autonomous behaviour
